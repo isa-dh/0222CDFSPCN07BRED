@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meal_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.meal_tags {
+  display: flex;
+}
+
+.meal_tags > h3:nth-child(1) {
+  margin-right: 2rem;
+}
+
+img {
+  max-width: 20rem;
+  margin: 1rem 0;
+}

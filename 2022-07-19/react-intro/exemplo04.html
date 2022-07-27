@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById('root');
+
+      function Card(props) {
+        console.log(props);
+
+        return (
+          <div className="card">
+            <h1>{props.nome}</h1>
+            <h2>{props.idade}</h2>
+            <p>{props.cidadeNatal}</p>
+            <img src={props.linkImagem} alt={props.nome} />
+          </div>
+        );
+      }
+
+      const element = (
+        <React.Fragment>
+          <Card
+            nome="Ed"
+            idade="20"
+            linkImagem="https://a-static.mlcdn.com.br/800x560/boneco-minions-2-stuart-que-fala-245cm-rosita/obaplaybrinquedoseeletronicos/cffa0d5ccfb411eb9a4c4201ac18500e/a8076bbb0b09ae92bab3ee61b5eaa9da.jpg"
+            cidadeNatal="São Paulo"
+          />
+          <Card
+            nome="Gru"
+            idade="100"
+            linkImagem="https://w7.pngwing.com/pngs/662/841/png-transparent-felonious-gru-despicable-me-gru-desktop-wallpaper-film-animated-film.png"
+            cidadeNatal="São Paulo"
+          />
+        </React.Fragment>
+      );
+
+      ReactDOM.render(element, rootElement);
+    </script>
+  </body>
+</html>
