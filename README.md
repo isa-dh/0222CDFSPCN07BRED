@@ -18,6 +18,7 @@ Repositório da turma 0222CDFSPCN07BRED do curso de Desenvolvimento Web Full Sta
 - [x] [2022-07-19](./2022-07-19/README.md)
 - [x] [2022-07-21](./2022-07-21/README.md)
 - [x] [2022-07-26](./2022-07-26/README.md)
+- [x] [2022-07-28](./2022-07-28/README.md)
 
 ## Status
 
